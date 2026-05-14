@@ -1,0 +1,16 @@
+[project]
+name = "driftwatch"
+version = "0.1.0"
+description = "Trace Claude Code tool calls; measure convergence, thrash, and momentum."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+driftwatch = "driftwatch.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["driftwatch*"]
